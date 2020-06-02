@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tiles on CompGuessWhat?!</title>
-    <link>http://compguesswhat.github.io/tiles/</link>
+    <link>https://compguesswhat.github.io/tiles/</link>
     <description>Recent content in Tiles on CompGuessWhat?!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://compguesswhat.github.io/tiles/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://compguesswhat.github.io/tiles/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Zero-shot guessing game</title>
-      <link>http://compguesswhat.github.io/tiles/zeroshot/</link>
+      <link>https://compguesswhat.github.io/tiles/zeroshot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://compguesswhat.github.io/tiles/zeroshot/</guid>
+      <guid>https://compguesswhat.github.io/tiles/zeroshot/</guid>
       <description>Assuming that the model has learned to compose concepts during the turns of the dialogue, we hypothesise that it should also be able to use these representations to play games involving target objects that belong to categories that have never been seen before. For example, humans can discriminate between a dolphin and a dog even though they might not know what it is called. The measure presented in this section has the potential to demonstrate whether current models lack the ability to systematically generalise to new instances that are composed of attributes learned during training.</description>
     </item>
     
     <item>
       <title>Attribute prediction task</title>
-      <link>http://compguesswhat.github.io/tiles/attrprediction/</link>
+      <link>https://compguesswhat.github.io/tiles/attrprediction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://compguesswhat.github.io/tiles/attrprediction/</guid>
+      <guid>https://compguesswhat.github.io/tiles/attrprediction/</guid>
       <description>We support the goal-oriented evaluation with the attribute prediction auxiliary task related to assessing the degree of compositionality of the representations learned for a specific task. With an attribute prediction task, we can assess whether the learned representations capture what we think they should, in terms of object attributes, rather than spurious correlations.
 In the context of guessing game, we regard the representation for the last turn of the dialogue as a composition or aggregation of all the attributes specified so far.</description>
     </item>
     
     <item>
       <title>GuessWhat?! game</title>
-      <link>http://compguesswhat.github.io/tiles/guesswhat/</link>
+      <link>https://compguesswhat.github.io/tiles/guesswhat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://compguesswhat.github.io/tiles/guesswhat/</guid>
+      <guid>https://compguesswhat.github.io/tiles/guesswhat/</guid>
       <description>The first and main task of this evaluation suite is a guessing game called GuessWhat?!. The game has been first proposed by (DeVries et.al, 2017). It consists of two agents: 1. an Oracle selects a target in a scene and has to answer questions about it; 2. a Questioner generates visually grounded questions aimed at understanding what is the target object in the scene.
 CompGuessWhat?! extends the GuessWhat?! dataset to promote the study of attribute-grounded language representations.</description>
     </item>
     
     <item>
       <title>CompGuessWhat?!</title>
-      <link>http://compguesswhat.github.io/tiles/compguesswhat/</link>
+      <link>https://compguesswhat.github.io/tiles/compguesswhat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://compguesswhat.github.io/tiles/compguesswhat/</guid>
+      <guid>https://compguesswhat.github.io/tiles/compguesswhat/</guid>
       <description>Approaches to Grounded Language Learning typically focus on a single task-based final performance measure that may not depend on desirable properties of the learned hidden representations, such as their ability to predict salient attributes or to generalise to unseen situations. To remedy this, we present GROLLA, an evaluation framework for Grounded Language Learning with Attributes with three sub-tasks: 1) Goal-oriented evaluation; 2) Object attribute prediction evaluation; and 3) Zero-shot evaluation.</description>
     </item>
     
