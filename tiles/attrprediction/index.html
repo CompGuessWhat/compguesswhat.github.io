@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="CompGuessWhat?! Official website">
+	<meta name="author" content="CompGuessWhat?! Official website">
+	<meta name="generator" content="Hugo 0.72.0" />
+	<title>Attribute prediction task &middot; CompGuessWhat?!</title>
+	<!-- Stylesheets -->
+	
+	<link rel="stylesheet" href="http://compguesswhat.github.io/css/main.css"/>
+	
+	
+
+	
+
+	<!-- Custom Fonts -->
+	<link href="http://compguesswhat.github.io/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	
+	<link rel="shortcut icon" type="image/x-icon" href="http://compguesswhat.github.io/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="http://compguesswhat.github.io/favicon.ico">
+	
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="js/ie/html5shiv.js"></script>
+	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+<!-- Wrapper --> 
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <a href="http://compguesswhat.github.io/" class="logo"><strong>CompGuesswhat?!</strong> <span></span></a>
+        <nav>
+            <a href="#menu">Menu</a>
+        </nav>
+    </header>
+
+<!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            
+                <li><a href="http://compguesswhat.github.io/">Home</a></li>
+            
+                <li><a href="http://compguesswhat.github.io/contact">Contact</a></li>
+            
+
+        </ul>
+        <ul class="actions vertical">
+            
+                <li><a href="http://compguesswhat.github.io/paper" class="button special fit">Paper</a></li>
+            
+            
+        </ul>
+    </nav>
+
+    <!-- Main --> 
+    <div id="main" class="alt">
+
+        
+        <section id="one">
+            <div class="inner">
+                <header class="major">
+                    <h1>Attribute prediction task</h1>
+                </header>
+                
+                <p>We support the goal-oriented evaluation with the attribute prediction auxiliary task related to assessing the degree of compositionality of the representations learned for a specific task. With an attribute prediction task, we can assess whether the learned representations capture what we think they should, in terms of object attributes, rather than spurious correlations.</p>
+<p>In the context of guessing game, we regard the representation for the last turn of the dialogue as a composition or aggregation of all the attributes specified so far. Therefore, we can use it to predict with high accuracy the attributes associated with a specific target object because it should encode the information needed to correctly discriminate the target from all the other objects in the scene. For instance, by playing several guessing games that have a microwave as the target object, the agent should learn a representation of microwave that is expressive enough to correctly discriminate a microwave from all the other objects in a scene.</p>
+<p><img src="/img/attribute_prediction.png" alt="Figure 2"></p>
+<p>For the attribute prediction task, we extract different multi-modal and amodal representations coming from state-of-the-art models for GuessWhat?! and we train a linear classifier for each representation so as to learn to predict the attributes of a given target object. In order to reproduce our experiments, you can probing classifiers framework in the GitHub repository <a href="https://github.com/CompGuessWhat/comp_probing">comb_probing</a>.</p>
+
+
+                
+                <a href="http://compguesswhat.github.io/tiles/guesswhat/">Previous Post</a>
+                
+                
+                <a href="http://compguesswhat.github.io/tiles/zeroshot/">Next Post</a>
+                
+            </div>
+        </section>
+        <!-- Disqus Inject --> 
+        
+    </div>
+
+    <!-- Footer --> 
+    
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                
+                    <li><a href="https://github.com/CompGuessWhat" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                
+                    <li><a href="mailto:alessandro.suglia@gmail.com" class="icon alt fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+                
+            </ul>
+            <ul class="copyright">
+                <li>&copy; A project collaboration between Heriot-Watt University, University of Edinburgh and University of Copenhagen (2020)</li>
+                
+            </ul>
+        </div>
+    </footer>
+
+    
+</div>
+
+<!-- Scripts --> 
+<!-- Scripts -->
+    <!-- jQuery -->
+    <script src="http://compguesswhat.github.io/js/jquery.min.js"></script>
+    <script src="http://compguesswhat.github.io/js/jquery.scrolly.min.js"></script>
+    <script src="http://compguesswhat.github.io/js/jquery.scrollex.min.js"></script>
+    <script src="http://compguesswhat.github.io/js/skel.min.js"></script>
+    <script src="http://compguesswhat.github.io/js/util.js"></script>
+
+    
+
+    <!-- Main JS -->
+    <script src="http://compguesswhat.github.io/js/main.js"></script>
+
+    
+
+    
+
+</body>
+</html>

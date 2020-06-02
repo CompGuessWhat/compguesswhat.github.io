@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CompGuessWhat?!</title>
+    <link>http://compguesswhat.github.io/</link>
+    <description>Recent content on CompGuessWhat?!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://compguesswhat.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Zero-shot guessing game</title>
+      <link>http://compguesswhat.github.io/tiles/zeroshot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://compguesswhat.github.io/tiles/zeroshot/</guid>
+      <description>Assuming that the model has learned to compose concepts during the turns of the dialogue, we hypothesise that it should also be able to use these representations to play games involving target objects that belong to categories that have never been seen before. For example, humans can discriminate between a dolphin and a dog even though they might not know what it is called. The measure presented in this section has the potential to demonstrate whether current models lack the ability to systematically generalise to new instances that are composed of attributes learned during training.</description>
+    </item>
+    
+    <item>
+      <title>Attribute prediction task</title>
+      <link>http://compguesswhat.github.io/tiles/attrprediction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://compguesswhat.github.io/tiles/attrprediction/</guid>
+      <description>We support the goal-oriented evaluation with the attribute prediction auxiliary task related to assessing the degree of compositionality of the representations learned for a specific task. With an attribute prediction task, we can assess whether the learned representations capture what we think they should, in terms of object attributes, rather than spurious correlations.
+In the context of guessing game, we regard the representation for the last turn of the dialogue as a composition or aggregation of all the attributes specified so far.</description>
+    </item>
+    
+    <item>
+      <title>GuessWhat?! game</title>
+      <link>http://compguesswhat.github.io/tiles/guesswhat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://compguesswhat.github.io/tiles/guesswhat/</guid>
+      <description>The first and main task of this evaluation suite is a guessing game called GuessWhat?!. The game has been first proposed by (DeVries et.al, 2017). It consists of two agents: 1. an Oracle selects a target in a scene and has to answer questions about it; 2. a Questioner generates visually grounded questions aimed at understanding what is the target object in the scene.
+CompGuessWhat?! extends the GuessWhat?! dataset to promote the study of attribute-grounded language representations.</description>
+    </item>
+    
+    <item>
+      <title>CompGuessWhat?!</title>
+      <link>http://compguesswhat.github.io/tiles/compguesswhat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://compguesswhat.github.io/tiles/compguesswhat/</guid>
+      <description>Approaches to Grounded Language Learning typically focus on a single task-based final performance measure that may not depend on desirable properties of the learned hidden representations, such as their ability to predict salient attributes or to generalise to unseen situations. To remedy this, we present GROLLA, an evaluation framework for Grounded Language Learning with Attributes with three sub-tasks: 1) Goal-oriented evaluation; 2) Object attribute prediction evaluation; and 3) Zero-shot evaluation.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://compguesswhat.github.io/contact/</link>
+      <pubDate>Tue, 31 Oct 2017 21:28:43 -0500</pubDate>
+      
+      <guid>http://compguesswhat.github.io/contact/</guid>
+      <description>The CompGuessWhat?! dataset is an instance of a multi-task evaluation framework for grounded language learning that has been proposed in the paper: &amp;ldquo;CompGuessWhat?!: A Multi-task Evaluation Framework for Grounded Language Learning&amp;rdquo; published in Association for Computational Linguistics (ACL) 2020.
+Several authors contributed to this work:
+ Alessandro Suglia (Heriot-Watt University) Ioannis Konstas (Heriot-Watt University) Andrea Vanzo (Heriot-Watt University) Emanuele Bastianelli (Heriot-Watt University) Desmond Elliott (University of Copenhagen) Stella Frank (University of Edinburgh) Oliver Lemon (Heriot-Watt University)  We would love to hear your opinion about this work so don&amp;rsquo;t hesitate to get in touch using the e-mail address reported below.</description>
+    </item>
+    
+    <item>
+      <title>Download</title>
+      <link>http://compguesswhat.github.io/download/</link>
+      <pubDate>Tue, 31 Oct 2017 21:28:43 -0500</pubDate>
+      
+      <guid>http://compguesswhat.github.io/download/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Examples</title>
+      <link>http://compguesswhat.github.io/examples/</link>
+      <pubDate>Tue, 31 Oct 2017 21:28:43 -0500</pubDate>
+      
+      <guid>http://compguesswhat.github.io/examples/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paper</title>
+      <link>http://compguesswhat.github.io/paper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://compguesswhat.github.io/paper/</guid>
+      <description>The paper CompGuessWhat?!: a Multi-Task Evaluation Framework for Grounded Language Learning has been accepted as long-paper to the Association for Computational Lingustics 2020.
+The paper can be download from ArXiv and from the ACL Anthology. Please use the following BibTex to cite our work:
+@inproceedings{suglia2020compguesswhat, title={CompGuessWhat?!: a Multi-task Evaluation Framework for Grounded Language Learning}, author={Suglia, Alessandro, Konstas, Ioannis, Vanzo, Andrea, Bastianelli, Emanuele, Desmond Elliott, Stella Frank and Oliver Lemon}, booktitle={Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics}, year={2020} } </description>
+    </item>
+    
+  </channel>
+</rss>
