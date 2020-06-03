@@ -54,9 +54,19 @@ CompGuessWhat?! extends the GuessWhat?! dataset to promote the study of attribut
       <pubDate>Tue, 31 Oct 2017 21:28:43 -0500</pubDate>
       
       <guid>https://compguesswhat.github.io/contact/</guid>
-      <description>The CompGuessWhat?! dataset is an instance of a multi-task evaluation framework for grounded language learning that has been proposed in the paper: &amp;ldquo;CompGuessWhat?!: A Multi-task Evaluation Framework for Grounded Language Learning&amp;rdquo; published in Association for Computational Linguistics (ACL) 2020.
-Several authors contributed to this work:
+      <description>The CompGuessWhat?! dataset is an instance of a multi-task evaluation framework for grounded language learning that has been proposed in the paper: &amp;ldquo;CompGuessWhat?!: A Multi-task Evaluation Framework for Grounded Language Learning&amp;rdquo; published in Association for Computational Linguistics (ACL) 2020. Several authors contributed to this work:
  Alessandro Suglia Ioannis Konstas Andrea Vanzo Emanuele Bastianelli Desmond Elliott Stella Frank Oliver Lemon  We would love to hear your opinion about this work so don&amp;rsquo;t hesitate to get in touch using the e-mail address reported below.</description>
+    </item>
+    
+    <item>
+      <title>Download</title>
+      <link>https://compguesswhat.github.io/download/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://compguesswhat.github.io/download/</guid>
+      <description>Resources CompGuessWhat?! extends the original GuessWhat?! datasets with a rich semantic representations in the form of scene graphs associated with every image used as reference scene for the guessing games. The code associated with this work can be found at the following link: GitHub.
+In the following we report shortcuts to all the material that has been developed to implement the CompGuessWhat?! dataset following the GROLLA framework:
+  CompGuessWhat?! games: download link.</description>
     </item>
     
     <item>
@@ -65,7 +75,7 @@ Several authors contributed to this work:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://compguesswhat.github.io/paper/</guid>
-      <description>The paper CompGuessWhat?!: a Multi-Task Evaluation Framework for Grounded Language Learning has been accepted as long-paper to the Association for Computational Lingustics 2020.
+      <description>The paper CompGuessWhat?!: a Multi-Task Evaluation Framework for Grounded Language Learning has been accepted as long paper to the Association for Computational Lingustics 2020.
 The paper can be download from ArXiv and from the ACL Anthology. Please use the following BibTex to cite our work:
 @inproceedings{suglia2020compguesswhat, title={CompGuessWhat?!: a Multi-task Evaluation Framework for Grounded Language Learning}, author={Suglia, Alessandro, Konstas, Ioannis, Vanzo, Andrea, Bastianelli, Emanuele, Desmond Elliott, Stella Frank and Oliver Lemon}, booktitle={Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics}, year={2020} } </description>
     </item>
