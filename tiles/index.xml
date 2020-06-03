@@ -35,7 +35,7 @@ In the context of guessing game, we regard the representation for the last turn 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://compguesswhat.github.io/tiles/guesswhat/</guid>
-      <description>The first and main task of this evaluation suite is a guessing game called GuessWhat?!. The game has been first proposed by (DeVries et.al, 2017). It consists of two agents: 1. an Oracle selects a target in a scene and has to answer questions about it; 2. a Questioner generates visually grounded questions aimed at understanding what is the target object in the scene. Due to the recent unavailability of the original dataset, we made it available on at the following link: Dropbox link.</description>
+      <description>The first and main task of this evaluation suite is a guessing game called GuessWhat?!. The game has been first proposed by (DeVries et.al, 2017). It consists of two agents: 1. an Oracle selects a target in a scene and has to answer questions about it; 2. a Questioner generates visually grounded questions aimed at understanding what is the target object in the scene. Due to the recent unavailability of the original dataset, we made it available at the following link: Dropbox link.</description>
     </item>
     
     <item>
