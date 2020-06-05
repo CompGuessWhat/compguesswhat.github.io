@@ -170,162 +170,267 @@
 </code></pre></div><p>For the zero-shot split, we use a slightly different format for the games due to the different image source namely <a href="https://opensource.google/projects/open-images-dataset">OpenImages</a>.
 In addition, the zero-shot split does <em>not</em> have gold dialogues because the models are supposed to play the games on their own
 and generate dialogues. Therefore, the <code>qas</code> field is missing.</p>
-<pre><code>{'id': 0,
- 'image': {'coco_url': 'https://s3.amazonaws.com/nocaps/test/0003d84e0165d630.jpg',
-  'date_captured': '2018-11-06 11:04:33',
-  'file_name': '0003d84e0165d630.jpg',
-  'height': 768,
-  'id': 4500,
-  'license': 0,
-  'open_images_id': '0003d84e0165d630',
-  'width': 1024},
- 'objects': [{'id': '0003d84e0165d630_2',
-   'category': 'plant',
-   'category_id': 0,
-   'bbox': [540.8, 153.60000000000002, 104.0, 56.000002559999956],
-   'segment': [{'MaskPath': '0003d84e0165d630_m018xm_3263473c.png',
-     'LabelName': '/m/018xm',
-     'BoxID': '3263473c',
-     'BoxXMin': '0.000000',
-     'BoxXMax': '0.198437',
-     'BoxYMin': '0.666667',
-     'BoxYMax': '0.941667',
-     'PredictedIoU': '0.00000',
-     'Clicks': ''}],
-   'area': 5824.000266239997,
-   'IsOccluded': 0,
-   'IsTruncated': 0},
-  {'id': '0003d84e0165d630_3',
-   'category': 'plant',
-   'category_id': 0,
-   'bbox': [640.0, 137.59999488, 86.39999999999998, 72.00000767999998],
-   'segment': [{'MaskPath': '0003d84e0165d630_m018xm_3263473c.png',
-     'LabelName': '/m/018xm',
-     'BoxID': '3263473c',
-     'BoxXMin': '0.000000',
-     'BoxXMax': '0.198437',
-     'BoxYMin': '0.666667',
-     'BoxYMax': '0.941667',
-     'PredictedIoU': '0.00000',
-     'Clicks': ''}],
-   'area': 6220.800663551997,
-   'IsOccluded': 0,
-   'IsTruncated': 0},
-  {'id': '0003d84e0165d630_8',
-   'category': 'person',
-   'category_id': 1,
-   'bbox': [232.0, 153.60000000000002, 70.39999999999998, 179.20000512000001],
-   'segment': [{'MaskPath': '0003d84e0165d630_m018xm_3263473c.png',
-     'LabelName': '/m/018xm',
-     'BoxID': '3263473c',
-     'BoxXMin': '0.000000',
-     'BoxXMax': '0.198437',
-     'BoxYMin': '0.666667',
-     'BoxYMax': '0.941667',
-     'PredictedIoU': '0.00000',
-     'Clicks': ''}],
-   'area': 12615.680360447997,
-   'IsOccluded': 0,
-   'IsTruncated': 0},
-  {'id': '0003d84e0165d630_9',
-   'category': 'person',
-   'category_id': 1,
-   'bbox': [235.2, 20.800000512, 65.60000000000002, 184.000009728],
-   'segment': [{'MaskPath': '0003d84e0165d630_m018xm_3263473c.png',
-     'LabelName': '/m/018xm',
-     'BoxID': '3263473c',
-     'BoxXMin': '0.000000',
-     'BoxXMax': '0.198437',
-     'BoxYMin': '0.666667',
-     'BoxYMax': '0.941667',
-     'PredictedIoU': '0.00000',
-     'Clicks': ''}],
-   'area': 12070.400638156803,
-   'IsOccluded': 0,
-   'IsTruncated': 0},
-  {'id': '0003d84e0165d630_10',
-   'category': 'person',
-   'category_id': 1,
-   'bbox': [452.8, 27.199999488, 71.99999999999994, 201.600010752],
-   'segment': [{'MaskPath': '0003d84e0165d630_m018xm_3263473c.png',
-     'LabelName': '/m/018xm',
-     'BoxID': '3263473c',
-     'BoxXMin': '0.000000',
-     'BoxXMax': '0.198437',
-     'BoxYMin': '0.666667',
-     'BoxYMax': '0.941667',
-     'PredictedIoU': '0.00000',
-     'Clicks': ''}],
-   'area': 14515.200774143988,
-   'IsOccluded': 0,
-   'IsTruncated': 0},
-  {'id': '0003d84e0165d630_11',
-   'category': 'person',
-   'category_id': 1,
-   'bbox': [753.6, 11.199999744, 104.0, 284.799995136],
-   'segment': [{'MaskPath': '0003d84e0165d630_m018xm_3263473c.png',
-     'LabelName': '/m/018xm',
-     'BoxID': '3263473c',
-     'BoxXMin': '0.000000',
-     'BoxXMax': '0.198437',
-     'BoxYMin': '0.666667',
-     'BoxYMax': '0.941667',
-     'PredictedIoU': '0.00000',
-     'Clicks': ''}],
-   'area': 29619.199494144,
-   'IsOccluded': 0,
-   'IsTruncated': 0},
-  {'id': '0003d84e0165d630_12',
-   'category': 'ball',
-   'category_id': 0,
-   'bbox': [0.0, 512.0000256, 203.2, 211.19996928],
-   'segment': [{'MaskPath': '0003d84e0165d630_m018xm_3263473c.png',
-     'LabelName': '/m/018xm',
-     'BoxID': '3263473c',
-     'BoxXMin': '0.000000',
-     'BoxXMax': '0.198437',
-     'BoxYMin': '0.666667',
-     'BoxYMax': '0.941667',
-     'PredictedIoU': '0.00000',
-     'Clicks': ''}],
-   'area': 42915.833757696004,
-   'IsOccluded': 0,
-   'IsTruncated': 0},
-  {'id': '0003d84e0165d630_13',
-   'category': 'mammal',
-   'category_id': 0,
-   'bbox': [227.2, 153.60000000000002, 68.80000000000001, 182.39999999999998],
-   'segment': [{'MaskPath': '0003d84e0165d630_m018xm_3263473c.png',
-     'LabelName': '/m/018xm',
-     'BoxID': '3263473c',
-     'BoxXMin': '0.000000',
-     'BoxXMax': '0.198437',
-     'BoxYMin': '0.666667',
-     'BoxYMax': '0.941667',
-     'PredictedIoU': '0.00000',
-     'Clicks': ''}],
-   'area': 12549.12,
-   'IsOccluded': 0,
-   'IsTruncated': 0},
-  {'id': '0003d84e0165d630_16',
-   'category': 'mammal',
-   'category_id': 0,
-   'bbox': [763.2, 11.199999744, 94.39999999999998, 279.99999513599994],
-   'segment': [{'MaskPath': '0003d84e0165d630_m018xm_3263473c.png',
-     'LabelName': '/m/018xm',
-     'BoxID': '3263473c',
-     'BoxXMin': '0.000000',
-     'BoxXMax': '0.198437',
-     'BoxYMin': '0.666667',
-     'BoxYMax': '0.941667',
-     'PredictedIoU': '0.00000',
-     'Clicks': ''}],
-   'area': 26431.999540838395,
-   'IsOccluded': 0,
-   'IsTruncated': 0}],
- 'object_id': '0003d84e0165d630_12',
- 'status': 'incomplete'}
-</code></pre><h2 id="citation">Citation</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+   <span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#ae81ff">0</span>,
+   <span style="color:#f92672">&#34;image&#34;</span>:{
+      <span style="color:#f92672">&#34;coco_url&#34;</span>:<span style="color:#e6db74">&#34;https://s3.amazonaws.com/nocaps/test/0003d84e0165d630.jpg&#34;</span>,
+      <span style="color:#f92672">&#34;date_captured&#34;</span>:<span style="color:#e6db74">&#34;2018-11-06 11:04:33&#34;</span>,
+      <span style="color:#f92672">&#34;file_name&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630.jpg&#34;</span>,
+      <span style="color:#f92672">&#34;height&#34;</span>:<span style="color:#ae81ff">768</span>,
+      <span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#ae81ff">4500</span>,
+      <span style="color:#f92672">&#34;license&#34;</span>:<span style="color:#ae81ff">0</span>,
+      <span style="color:#f92672">&#34;open_images_id&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630&#34;</span>,
+      <span style="color:#f92672">&#34;width&#34;</span>:<span style="color:#ae81ff">1024</span>
+   },
+   <span style="color:#f92672">&#34;objects&#34;</span>:[
+      {
+         <span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630_2&#34;</span>,
+         <span style="color:#f92672">&#34;category&#34;</span>:<span style="color:#e6db74">&#34;plant&#34;</span>,
+         <span style="color:#f92672">&#34;category_id&#34;</span>:<span style="color:#ae81ff">0</span>,
+         <span style="color:#f92672">&#34;bbox&#34;</span>:[
+            <span style="color:#ae81ff">540.8</span>,
+            <span style="color:#ae81ff">153.60000000000002</span>,
+            <span style="color:#ae81ff">104.0</span>,
+            <span style="color:#ae81ff">56.000002559999956</span>
+         ],
+         <span style="color:#f92672">&#34;segment&#34;</span>:[
+            {
+               <span style="color:#f92672">&#34;MaskPath&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630_m018xm_3263473c.png&#34;</span>,
+               <span style="color:#f92672">&#34;LabelName&#34;</span>:<span style="color:#e6db74">&#34;/m/018xm&#34;</span>,
+               <span style="color:#f92672">&#34;BoxID&#34;</span>:<span style="color:#e6db74">&#34;3263473c&#34;</span>,
+               <span style="color:#f92672">&#34;BoxXMin&#34;</span>:<span style="color:#e6db74">&#34;0.000000&#34;</span>,
+               <span style="color:#f92672">&#34;BoxXMax&#34;</span>:<span style="color:#e6db74">&#34;0.198437&#34;</span>,
+               <span style="color:#f92672">&#34;BoxYMin&#34;</span>:<span style="color:#e6db74">&#34;0.666667&#34;</span>,
+               <span style="color:#f92672">&#34;BoxYMax&#34;</span>:<span style="color:#e6db74">&#34;0.941667&#34;</span>,
+               <span style="color:#f92672">&#34;PredictedIoU&#34;</span>:<span style="color:#e6db74">&#34;0.00000&#34;</span>,
+               <span style="color:#f92672">&#34;Clicks&#34;</span>:<span style="color:#e6db74">&#34;&#34;</span>
+            }
+         ],
+         <span style="color:#f92672">&#34;area&#34;</span>:<span style="color:#ae81ff">5824.000266239997</span>,
+         <span style="color:#f92672">&#34;IsOccluded&#34;</span>:<span style="color:#ae81ff">0</span>,
+         <span style="color:#f92672">&#34;IsTruncated&#34;</span>:<span style="color:#ae81ff">0</span>
+      },
+      {
+         <span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630_3&#34;</span>,
+         <span style="color:#f92672">&#34;category&#34;</span>:<span style="color:#e6db74">&#34;plant&#34;</span>,
+         <span style="color:#f92672">&#34;category_id&#34;</span>:<span style="color:#ae81ff">0</span>,
+         <span style="color:#f92672">&#34;bbox&#34;</span>:[
+            <span style="color:#ae81ff">640.0</span>,
+            <span style="color:#ae81ff">137.59999488</span>,
+            <span style="color:#ae81ff">86.39999999999998</span>,
+            <span style="color:#ae81ff">72.00000767999998</span>
+         ],
+         <span style="color:#f92672">&#34;segment&#34;</span>:[
+            {
+               <span style="color:#f92672">&#34;MaskPath&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630_m018xm_3263473c.png&#34;</span>,
+               <span style="color:#f92672">&#34;LabelName&#34;</span>:<span style="color:#e6db74">&#34;/m/018xm&#34;</span>,
+               <span style="color:#f92672">&#34;BoxID&#34;</span>:<span style="color:#e6db74">&#34;3263473c&#34;</span>,
+               <span style="color:#f92672">&#34;BoxXMin&#34;</span>:<span style="color:#e6db74">&#34;0.000000&#34;</span>,
+               <span style="color:#f92672">&#34;BoxXMax&#34;</span>:<span style="color:#e6db74">&#34;0.198437&#34;</span>,
+               <span style="color:#f92672">&#34;BoxYMin&#34;</span>:<span style="color:#e6db74">&#34;0.666667&#34;</span>,
+               <span style="color:#f92672">&#34;BoxYMax&#34;</span>:<span style="color:#e6db74">&#34;0.941667&#34;</span>,
+               <span style="color:#f92672">&#34;PredictedIoU&#34;</span>:<span style="color:#e6db74">&#34;0.00000&#34;</span>,
+               <span style="color:#f92672">&#34;Clicks&#34;</span>:<span style="color:#e6db74">&#34;&#34;</span>
+            }
+         ],
+         <span style="color:#f92672">&#34;area&#34;</span>:<span style="color:#ae81ff">6220.800663551997</span>,
+         <span style="color:#f92672">&#34;IsOccluded&#34;</span>:<span style="color:#ae81ff">0</span>,
+         <span style="color:#f92672">&#34;IsTruncated&#34;</span>:<span style="color:#ae81ff">0</span>
+      },
+      {
+         <span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630_8&#34;</span>,
+         <span style="color:#f92672">&#34;category&#34;</span>:<span style="color:#e6db74">&#34;person&#34;</span>,
+         <span style="color:#f92672">&#34;category_id&#34;</span>:<span style="color:#ae81ff">1</span>,
+         <span style="color:#f92672">&#34;bbox&#34;</span>:[
+            <span style="color:#ae81ff">232.0</span>,
+            <span style="color:#ae81ff">153.60000000000002</span>,
+            <span style="color:#ae81ff">70.39999999999998</span>,
+            <span style="color:#ae81ff">179.20000512000001</span>
+         ],
+         <span style="color:#f92672">&#34;segment&#34;</span>:[
+            {
+               <span style="color:#f92672">&#34;MaskPath&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630_m018xm_3263473c.png&#34;</span>,
+               <span style="color:#f92672">&#34;LabelName&#34;</span>:<span style="color:#e6db74">&#34;/m/018xm&#34;</span>,
+               <span style="color:#f92672">&#34;BoxID&#34;</span>:<span style="color:#e6db74">&#34;3263473c&#34;</span>,
+               <span style="color:#f92672">&#34;BoxXMin&#34;</span>:<span style="color:#e6db74">&#34;0.000000&#34;</span>,
+               <span style="color:#f92672">&#34;BoxXMax&#34;</span>:<span style="color:#e6db74">&#34;0.198437&#34;</span>,
+               <span style="color:#f92672">&#34;BoxYMin&#34;</span>:<span style="color:#e6db74">&#34;0.666667&#34;</span>,
+               <span style="color:#f92672">&#34;BoxYMax&#34;</span>:<span style="color:#e6db74">&#34;0.941667&#34;</span>,
+               <span style="color:#f92672">&#34;PredictedIoU&#34;</span>:<span style="color:#e6db74">&#34;0.00000&#34;</span>,
+               <span style="color:#f92672">&#34;Clicks&#34;</span>:<span style="color:#e6db74">&#34;&#34;</span>
+            }
+         ],
+         <span style="color:#f92672">&#34;area&#34;</span>:<span style="color:#ae81ff">12615.680360447997</span>,
+         <span style="color:#f92672">&#34;IsOccluded&#34;</span>:<span style="color:#ae81ff">0</span>,
+         <span style="color:#f92672">&#34;IsTruncated&#34;</span>:<span style="color:#ae81ff">0</span>
+      },
+      {
+         <span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630_9&#34;</span>,
+         <span style="color:#f92672">&#34;category&#34;</span>:<span style="color:#e6db74">&#34;person&#34;</span>,
+         <span style="color:#f92672">&#34;category_id&#34;</span>:<span style="color:#ae81ff">1</span>,
+         <span style="color:#f92672">&#34;bbox&#34;</span>:[
+            <span style="color:#ae81ff">235.2</span>,
+            <span style="color:#ae81ff">20.800000512</span>,
+            <span style="color:#ae81ff">65.60000000000002</span>,
+            <span style="color:#ae81ff">184.000009728</span>
+         ],
+         <span style="color:#f92672">&#34;segment&#34;</span>:[
+            {
+               <span style="color:#f92672">&#34;MaskPath&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630_m018xm_3263473c.png&#34;</span>,
+               <span style="color:#f92672">&#34;LabelName&#34;</span>:<span style="color:#e6db74">&#34;/m/018xm&#34;</span>,
+               <span style="color:#f92672">&#34;BoxID&#34;</span>:<span style="color:#e6db74">&#34;3263473c&#34;</span>,
+               <span style="color:#f92672">&#34;BoxXMin&#34;</span>:<span style="color:#e6db74">&#34;0.000000&#34;</span>,
+               <span style="color:#f92672">&#34;BoxXMax&#34;</span>:<span style="color:#e6db74">&#34;0.198437&#34;</span>,
+               <span style="color:#f92672">&#34;BoxYMin&#34;</span>:<span style="color:#e6db74">&#34;0.666667&#34;</span>,
+               <span style="color:#f92672">&#34;BoxYMax&#34;</span>:<span style="color:#e6db74">&#34;0.941667&#34;</span>,
+               <span style="color:#f92672">&#34;PredictedIoU&#34;</span>:<span style="color:#e6db74">&#34;0.00000&#34;</span>,
+               <span style="color:#f92672">&#34;Clicks&#34;</span>:<span style="color:#e6db74">&#34;&#34;</span>
+            }
+         ],
+         <span style="color:#f92672">&#34;area&#34;</span>:<span style="color:#ae81ff">12070.400638156803</span>,
+         <span style="color:#f92672">&#34;IsOccluded&#34;</span>:<span style="color:#ae81ff">0</span>,
+         <span style="color:#f92672">&#34;IsTruncated&#34;</span>:<span style="color:#ae81ff">0</span>
+      },
+      {
+         <span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630_10&#34;</span>,
+         <span style="color:#f92672">&#34;category&#34;</span>:<span style="color:#e6db74">&#34;person&#34;</span>,
+         <span style="color:#f92672">&#34;category_id&#34;</span>:<span style="color:#ae81ff">1</span>,
+         <span style="color:#f92672">&#34;bbox&#34;</span>:[
+            <span style="color:#ae81ff">452.8</span>,
+            <span style="color:#ae81ff">27.199999488</span>,
+            <span style="color:#ae81ff">71.99999999999994</span>,
+            <span style="color:#ae81ff">201.600010752</span>
+         ],
+         <span style="color:#f92672">&#34;segment&#34;</span>:[
+            {
+               <span style="color:#f92672">&#34;MaskPath&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630_m018xm_3263473c.png&#34;</span>,
+               <span style="color:#f92672">&#34;LabelName&#34;</span>:<span style="color:#e6db74">&#34;/m/018xm&#34;</span>,
+               <span style="color:#f92672">&#34;BoxID&#34;</span>:<span style="color:#e6db74">&#34;3263473c&#34;</span>,
+               <span style="color:#f92672">&#34;BoxXMin&#34;</span>:<span style="color:#e6db74">&#34;0.000000&#34;</span>,
+               <span style="color:#f92672">&#34;BoxXMax&#34;</span>:<span style="color:#e6db74">&#34;0.198437&#34;</span>,
+               <span style="color:#f92672">&#34;BoxYMin&#34;</span>:<span style="color:#e6db74">&#34;0.666667&#34;</span>,
+               <span style="color:#f92672">&#34;BoxYMax&#34;</span>:<span style="color:#e6db74">&#34;0.941667&#34;</span>,
+               <span style="color:#f92672">&#34;PredictedIoU&#34;</span>:<span style="color:#e6db74">&#34;0.00000&#34;</span>,
+               <span style="color:#f92672">&#34;Clicks&#34;</span>:<span style="color:#e6db74">&#34;&#34;</span>
+            }
+         ],
+         <span style="color:#f92672">&#34;area&#34;</span>:<span style="color:#ae81ff">14515.200774143988</span>,
+         <span style="color:#f92672">&#34;IsOccluded&#34;</span>:<span style="color:#ae81ff">0</span>,
+         <span style="color:#f92672">&#34;IsTruncated&#34;</span>:<span style="color:#ae81ff">0</span>
+      },
+      {
+         <span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630_11&#34;</span>,
+         <span style="color:#f92672">&#34;category&#34;</span>:<span style="color:#e6db74">&#34;person&#34;</span>,
+         <span style="color:#f92672">&#34;category_id&#34;</span>:<span style="color:#ae81ff">1</span>,
+         <span style="color:#f92672">&#34;bbox&#34;</span>:[
+            <span style="color:#ae81ff">753.6</span>,
+            <span style="color:#ae81ff">11.199999744</span>,
+            <span style="color:#ae81ff">104.0</span>,
+            <span style="color:#ae81ff">284.799995136</span>
+         ],
+         <span style="color:#f92672">&#34;segment&#34;</span>:[
+            {
+               <span style="color:#f92672">&#34;MaskPath&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630_m018xm_3263473c.png&#34;</span>,
+               <span style="color:#f92672">&#34;LabelName&#34;</span>:<span style="color:#e6db74">&#34;/m/018xm&#34;</span>,
+               <span style="color:#f92672">&#34;BoxID&#34;</span>:<span style="color:#e6db74">&#34;3263473c&#34;</span>,
+               <span style="color:#f92672">&#34;BoxXMin&#34;</span>:<span style="color:#e6db74">&#34;0.000000&#34;</span>,
+               <span style="color:#f92672">&#34;BoxXMax&#34;</span>:<span style="color:#e6db74">&#34;0.198437&#34;</span>,
+               <span style="color:#f92672">&#34;BoxYMin&#34;</span>:<span style="color:#e6db74">&#34;0.666667&#34;</span>,
+               <span style="color:#f92672">&#34;BoxYMax&#34;</span>:<span style="color:#e6db74">&#34;0.941667&#34;</span>,
+               <span style="color:#f92672">&#34;PredictedIoU&#34;</span>:<span style="color:#e6db74">&#34;0.00000&#34;</span>,
+               <span style="color:#f92672">&#34;Clicks&#34;</span>:<span style="color:#e6db74">&#34;&#34;</span>
+            }
+         ],
+         <span style="color:#f92672">&#34;area&#34;</span>:<span style="color:#ae81ff">29619.199494144</span>,
+         <span style="color:#f92672">&#34;IsOccluded&#34;</span>:<span style="color:#ae81ff">0</span>,
+         <span style="color:#f92672">&#34;IsTruncated&#34;</span>:<span style="color:#ae81ff">0</span>
+      },
+      {
+         <span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630_12&#34;</span>,
+         <span style="color:#f92672">&#34;category&#34;</span>:<span style="color:#e6db74">&#34;ball&#34;</span>,
+         <span style="color:#f92672">&#34;category_id&#34;</span>:<span style="color:#ae81ff">0</span>,
+         <span style="color:#f92672">&#34;bbox&#34;</span>:[
+            <span style="color:#ae81ff">0.0</span>,
+            <span style="color:#ae81ff">512.0000256</span>,
+            <span style="color:#ae81ff">203.2</span>,
+            <span style="color:#ae81ff">211.19996928</span>
+         ],
+         <span style="color:#f92672">&#34;segment&#34;</span>:[
+            {
+               <span style="color:#f92672">&#34;MaskPath&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630_m018xm_3263473c.png&#34;</span>,
+               <span style="color:#f92672">&#34;LabelName&#34;</span>:<span style="color:#e6db74">&#34;/m/018xm&#34;</span>,
+               <span style="color:#f92672">&#34;BoxID&#34;</span>:<span style="color:#e6db74">&#34;3263473c&#34;</span>,
+               <span style="color:#f92672">&#34;BoxXMin&#34;</span>:<span style="color:#e6db74">&#34;0.000000&#34;</span>,
+               <span style="color:#f92672">&#34;BoxXMax&#34;</span>:<span style="color:#e6db74">&#34;0.198437&#34;</span>,
+               <span style="color:#f92672">&#34;BoxYMin&#34;</span>:<span style="color:#e6db74">&#34;0.666667&#34;</span>,
+               <span style="color:#f92672">&#34;BoxYMax&#34;</span>:<span style="color:#e6db74">&#34;0.941667&#34;</span>,
+               <span style="color:#f92672">&#34;PredictedIoU&#34;</span>:<span style="color:#e6db74">&#34;0.00000&#34;</span>,
+               <span style="color:#f92672">&#34;Clicks&#34;</span>:<span style="color:#e6db74">&#34;&#34;</span>
+            }
+         ],
+         <span style="color:#f92672">&#34;area&#34;</span>:<span style="color:#ae81ff">42915.833757696004</span>,
+         <span style="color:#f92672">&#34;IsOccluded&#34;</span>:<span style="color:#ae81ff">0</span>,
+         <span style="color:#f92672">&#34;IsTruncated&#34;</span>:<span style="color:#ae81ff">0</span>
+      },
+      {
+         <span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630_13&#34;</span>,
+         <span style="color:#f92672">&#34;category&#34;</span>:<span style="color:#e6db74">&#34;mammal&#34;</span>,
+         <span style="color:#f92672">&#34;category_id&#34;</span>:<span style="color:#ae81ff">0</span>,
+         <span style="color:#f92672">&#34;bbox&#34;</span>:[
+            <span style="color:#ae81ff">227.2</span>,
+            <span style="color:#ae81ff">153.60000000000002</span>,
+            <span style="color:#ae81ff">68.80000000000001</span>,
+            <span style="color:#ae81ff">182.39999999999998</span>
+         ],
+         <span style="color:#f92672">&#34;segment&#34;</span>:[
+            {
+               <span style="color:#f92672">&#34;MaskPath&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630_m018xm_3263473c.png&#34;</span>,
+               <span style="color:#f92672">&#34;LabelName&#34;</span>:<span style="color:#e6db74">&#34;/m/018xm&#34;</span>,
+               <span style="color:#f92672">&#34;BoxID&#34;</span>:<span style="color:#e6db74">&#34;3263473c&#34;</span>,
+               <span style="color:#f92672">&#34;BoxXMin&#34;</span>:<span style="color:#e6db74">&#34;0.000000&#34;</span>,
+               <span style="color:#f92672">&#34;BoxXMax&#34;</span>:<span style="color:#e6db74">&#34;0.198437&#34;</span>,
+               <span style="color:#f92672">&#34;BoxYMin&#34;</span>:<span style="color:#e6db74">&#34;0.666667&#34;</span>,
+               <span style="color:#f92672">&#34;BoxYMax&#34;</span>:<span style="color:#e6db74">&#34;0.941667&#34;</span>,
+               <span style="color:#f92672">&#34;PredictedIoU&#34;</span>:<span style="color:#e6db74">&#34;0.00000&#34;</span>,
+               <span style="color:#f92672">&#34;Clicks&#34;</span>:<span style="color:#e6db74">&#34;&#34;</span>
+            }
+         ],
+         <span style="color:#f92672">&#34;area&#34;</span>:<span style="color:#ae81ff">12549.12</span>,
+         <span style="color:#f92672">&#34;IsOccluded&#34;</span>:<span style="color:#ae81ff">0</span>,
+         <span style="color:#f92672">&#34;IsTruncated&#34;</span>:<span style="color:#ae81ff">0</span>
+      },
+      {
+         <span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630_16&#34;</span>,
+         <span style="color:#f92672">&#34;category&#34;</span>:<span style="color:#e6db74">&#34;mammal&#34;</span>,
+         <span style="color:#f92672">&#34;category_id&#34;</span>:<span style="color:#ae81ff">0</span>,
+         <span style="color:#f92672">&#34;bbox&#34;</span>:[
+            <span style="color:#ae81ff">763.2</span>,
+            <span style="color:#ae81ff">11.199999744</span>,
+            <span style="color:#ae81ff">94.39999999999998</span>,
+            <span style="color:#ae81ff">279.99999513599994</span>
+         ],
+         <span style="color:#f92672">&#34;segment&#34;</span>:[
+            {
+               <span style="color:#f92672">&#34;MaskPath&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630_m018xm_3263473c.png&#34;</span>,
+               <span style="color:#f92672">&#34;LabelName&#34;</span>:<span style="color:#e6db74">&#34;/m/018xm&#34;</span>,
+               <span style="color:#f92672">&#34;BoxID&#34;</span>:<span style="color:#e6db74">&#34;3263473c&#34;</span>,
+               <span style="color:#f92672">&#34;BoxXMin&#34;</span>:<span style="color:#e6db74">&#34;0.000000&#34;</span>,
+               <span style="color:#f92672">&#34;BoxXMax&#34;</span>:<span style="color:#e6db74">&#34;0.198437&#34;</span>,
+               <span style="color:#f92672">&#34;BoxYMin&#34;</span>:<span style="color:#e6db74">&#34;0.666667&#34;</span>,
+               <span style="color:#f92672">&#34;BoxYMax&#34;</span>:<span style="color:#e6db74">&#34;0.941667&#34;</span>,
+               <span style="color:#f92672">&#34;PredictedIoU&#34;</span>:<span style="color:#e6db74">&#34;0.00000&#34;</span>,
+               <span style="color:#f92672">&#34;Clicks&#34;</span>:<span style="color:#e6db74">&#34;&#34;</span>
+            }
+         ],
+         <span style="color:#f92672">&#34;area&#34;</span>:<span style="color:#ae81ff">26431.999540838395</span>,
+         <span style="color:#f92672">&#34;IsOccluded&#34;</span>:<span style="color:#ae81ff">0</span>,
+         <span style="color:#f92672">&#34;IsTruncated&#34;</span>:<span style="color:#ae81ff">0</span>
+      }
+   ],
+   <span style="color:#f92672">&#34;object_id&#34;</span>:<span style="color:#e6db74">&#34;0003d84e0165d630_12&#34;</span>,
+   <span style="color:#f92672">&#34;status&#34;</span>:<span style="color:#e6db74">&#34;incomplete&#34;</span>
+}
+</code></pre></div><h2 id="citation">Citation</h2>
 <p>Please cite our work in case you decide to use our data and code:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bibtex" data-lang="bibtex"><span style="color:#a6e22e">@inproceedings</span>{suglia2020compguesswhat,
   <span style="color:#a6e22e">title</span>=<span style="color:#e6db74">{CompGuessWhat?!: a Multi-task Evaluation Framework for Grounded Language Learning}</span>,
