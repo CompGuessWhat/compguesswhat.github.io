@@ -76,7 +76,7 @@ In the following we report shortcuts to all the material that has been developed
       <guid>https://compguesswhat.github.io/paper/</guid>
       <description>The paper CompGuessWhat?!: a Multi-Task Evaluation Framework for Grounded Language Learning has been accepted as long paper to the Association for Computational Lingustics 2020.
 The paper can be download from ArXiv and from the ACL Anthology. Please use the following BibTex to cite our work:
-@inproceedings{suglia2020compguesswhat, title={CompGuessWhat?!: a Multi-task Evaluation Framework for Grounded Language Learning}, author={Suglia, Alessandro, Konstas, Ioannis, Vanzo, Andrea, Bastianelli, Emanuele, Desmond Elliott, Stella Frank and Oliver Lemon}, booktitle={Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics}, year={2020} } </description>
+@inproceedings{suglia-etal-2020-compguesswhat, title = &amp;#34;{C}omp{G}uess{W}hat?!: A Multi-task Evaluation Framework for Grounded Language Learning&amp;#34;, author = &amp;#34;Suglia, Alessandro and Konstas, Ioannis and Vanzo, Andrea and Bastianelli, Emanuele and Elliott, Desmond and Frank, Stella and Lemon, Oliver&amp;#34;, booktitle = &amp;#34;Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics&amp;#34;, month = jul, year = &amp;#34;2020&amp;#34;, address = &amp;#34;Online&amp;#34;, publisher = &amp;#34;Association for Computational Linguistics&amp;#34;, url = &amp;#34;https://www.</description>
     </item>
     
   </channel>
